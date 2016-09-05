@@ -1,0 +1,31 @@
+/*You can nest properties to keep things organized in a similar way to the DOM*/
+
+.banner {
+  font-family: 'Pacifico', cursive;
+  height: 400px;
+  background-image: url("lemonade.jpg");
+  border: {
+    top: 4px solid black;
+    bottom: 4px solid black;
+  }
+  .slogan {
+    position: absolute;
+    border: 4px solid black;
+    top: 200px;
+    left: 25%;
+    width: 50%;
+    height: 200px;
+    text-align: center;
+    span {
+      font-size: 24px;
+      line-height: 200px;
+    }
+  }
+}
+
+/*Variables can be used in Sass so that when updating things you only have to change it in on location, in order to apply those changes every where*/
+
+/*In Sass $ is used to reference and define a variable.*/
+/*This is the creation and definition of a Sass variable, use the reference name within the code for use*/
+$translucent-white: rgba(255, 255, 255, 0.3);
+
