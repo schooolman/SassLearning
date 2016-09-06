@@ -29,3 +29,37 @@
 /*This is the creation and definition of a Sass variable, use the reference name within the code for use*/
 $translucent-white: rgba(255, 255, 255, 0.3);
 
+/*variables can have several different types. Below is a vairable with a type of Number, they can be strings, booleans, null*/
+$icon-square-length: 300px;
+
+/*variables can also be lists and maps, lists must be denoted with spaces or commas*/
+
+/*In Sass, the & character is used to specify exactly where a parent selector should be inserted.*/
+
+
+&:hover{
+	transform: (rotatey(-180deg));
+}
+
+/*In Sass, a mixin lets you make groups of CSS declarations that you want to reuse throughout your site.*/
+
+@mixin backface-visibility {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+}
+
+
+/* 	Mixins can take multiple arguments.
+Sass allows you to explicitly define each argument in your @include statement.
+When values are explicitly specified you can send them out of order.
+If a mixin definition has a combination of arguments with and without a default value, you should define the ones with no default value first.
+Mixins can be nested.*/
+
+/*In Sass, string interpolation is the process of placing a variable string in the middle of two other strings.*/
+
+
+
+
